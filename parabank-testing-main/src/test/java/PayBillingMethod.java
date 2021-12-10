@@ -1,13 +1,10 @@
 import org.junit.Assert;
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.List;
-
 public class PayBillingMethod {
-    private static final WebDriver driver = Util.getDriver();
+    private static final WebDriver driver = Base.getDriver();
 
     // fill out a bill pay to payee and check's transaction occurred
     public static void PayBills() {

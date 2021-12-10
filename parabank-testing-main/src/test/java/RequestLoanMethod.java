@@ -1,13 +1,10 @@
 import org.junit.Assert;
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import java.util.List;
-
 public class RequestLoanMethod {
-    private static WebDriver driver = Util.getDriver();
+    private static WebDriver driver = Base.getDriver();
 
 
 

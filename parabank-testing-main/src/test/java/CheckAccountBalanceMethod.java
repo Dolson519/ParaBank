@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 
 public class CheckAccountBalanceMethod {
-    private static WebDriver driver = Util.getDriver();
+    private static WebDriver driver = Base.getDriver();
 
 //clicks on the account overview to see balance.
     public static void balance() {

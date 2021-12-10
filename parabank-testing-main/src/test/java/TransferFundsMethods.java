@@ -1,10 +1,8 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
 public class TransferFundsMethods {
-    private static WebDriver driver = Util.getDriver();
+    private static WebDriver driver = Base.getDriver();
 
 //transfer money from one account to another owned account.
     public static void transfer_money() {

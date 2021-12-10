@@ -1,11 +1,11 @@
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class OpenAccount {
-    private static WebDriver driver = Util.getDriver();
+    private static WebDriver driver = Base.getDriver();
 
     //create a checking account
     public static void CreateAccountChecking() {

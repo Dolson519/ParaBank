@@ -2,11 +2,10 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
 public class TransactionsearchMethod {
 
-    private static WebDriver driver = Util.getDriver();
+    private static WebDriver driver = Base.getDriver();
 
 
         public static void TransactionSearchByAmount(){

@@ -3,8 +3,7 @@ import org.testng.annotations.Test;
 
 
 public class WebSiteTest {
-    private WebDriver driver = Util.getDriver();
-
+    private WebDriver driver = Base.getDriver();
 
 
     @Test
@@ -43,7 +42,7 @@ public class WebSiteTest {
     }
 
 
-    @Test(priority = 1)
+    @Test(priority = 14)
     public void searchForTransactionByAmount() {
         TransactionsearchMethod.TransactionSearchByAmount();
     }
@@ -68,19 +67,17 @@ public class WebSiteTest {
     /*@Test
     public void forgotLoginTest() {
         ForgotLoginMethod.forgotLogin();
-        driver.quit();
+
     }*/
 
     /* keep getting internal error
     @Test
     public void TransferFunds(){
         TransferFundsMethods.transfer_money();
-        driver.quit();
     }*/
     @Test
     public void WebSiteRegister(){
         RegisterMethod.register();
-        //driver.quit();
     }
 
     @Test
