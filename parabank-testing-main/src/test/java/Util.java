@@ -15,6 +15,9 @@ public class Util {
     //class is used for the chrome driver, and getting to the para bank site
     @BeforeMethod
     public static WebDriver getDriver() {
+        driver.manage().deleteAllCookies();
+        driver.manage().window().maximize();
+
             System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
             driver = new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
