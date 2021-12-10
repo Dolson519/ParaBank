@@ -30,10 +30,11 @@ public class Util {
             submit_button.click();
         return driver;
     }
-    @AfterClass
+    @AfterTest
     public void tearDown(){
         driver.quit();
     }
+
 }
 
 
