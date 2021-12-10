@@ -10,7 +10,7 @@ public class RegisterMethod {
 
 
 
-
+// registers new users account information
     public static void register() {
 
        WebDriverWait wait = new WebDriverWait(driver,10);

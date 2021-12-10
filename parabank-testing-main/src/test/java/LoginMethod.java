@@ -7,7 +7,7 @@ public class LoginMethod  {
 
 
 
-
+    //logging into account
     public static void login(){
     WebElement username = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/div/form/div[1]/input"));
     username.sendKeys("chocolate");
@@ -17,8 +17,5 @@ public class LoginMethod  {
     submit_button.click();
 
     }
-
-
-
 
 }

@@ -12,7 +12,7 @@ public class UpdateInformationsMethod {
     private static WebDriver driver = Util.getDriver();
 
 
-
+//update users new contact information
 public static void UpdateProfile(){
     WebElement updateinfo = driver.findElement(By.xpath("//a[@href='/parabank/updateprofile.htm']"));
     updateinfo.click();

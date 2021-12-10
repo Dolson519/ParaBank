@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 public class Util {
     private static WebDriver driver;
 
+    //class is used for the chrome driver, and getting to the para bank site
     public static WebDriver getDriver() {
         if (driver == null) {
             System.setProperty("webdriver.chrome.driver", "chromedriver.exe");

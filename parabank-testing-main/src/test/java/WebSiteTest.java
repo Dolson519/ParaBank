@@ -7,8 +7,6 @@ import org.openqa.selenium.WebDriver;
 public class WebSiteTest {
     private WebDriver driver = Util.getDriver();
 
-
-
     @Before
     public void deleteCookies() {
         driver.manage().deleteAllCookies();
@@ -58,15 +56,12 @@ public class WebSiteTest {
 
     }*/
 
-
     @Test
     public void AccountBalance() {
         LoginMethod.login();
         CheckAccountBalanceMethod.balance();
-        //driver.quit();
+        driver.quit();
     }
-
-
 
     @Test
     public void OpenChecking(){
@@ -75,7 +70,6 @@ public class WebSiteTest {
         driver.quit();
     }
 
-
     @Test
     public void OpenSavings(){
         LoginMethod.login();
@@ -83,16 +77,12 @@ public class WebSiteTest {
         driver.quit();
     }
 
-
-
-
     @Test
     public void UpdateInfo() {
         LoginMethod.login();
         UpdateInformationsMethod.UpdateProfile();
         driver.quit();
     }
-
 
     @Test
     public void Loan() {
@@ -138,8 +128,6 @@ public class WebSiteTest {
         driver.quit();
     }
 
-
-
     @Test
     public void PayingBills() {
         LoginMethod.login();
@@ -147,13 +135,10 @@ public class WebSiteTest {
         driver.quit();
     }
 
-    /*@Test
+    /*@Test keep getting internal error
     public void TransferFunds(){
         LoginMethod.login();
         TransferFundsMethods.transfer_money();
         driver.quit();
     }*/
-
-
-
 }

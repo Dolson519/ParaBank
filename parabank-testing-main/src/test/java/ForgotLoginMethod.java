@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 public class ForgotLoginMethod {
     private static WebDriver driver= Util.getDriver();
 
+    //attempting to obtain forgotten login.
     public static void forgotLogin(){
         driver.get("https://parabank.parasoft.com/parabank/index.htm");
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/div/p[1]/a")).click();

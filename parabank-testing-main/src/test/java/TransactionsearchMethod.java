@@ -38,5 +38,4 @@ public class TransactionsearchMethod {
             driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div[7]/button")).click();
         }
 
-
 }

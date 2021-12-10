@@ -9,7 +9,7 @@ import java.util.List;
 public class PayBillingMethod {
     private static final WebDriver driver = Util.getDriver();
 
-
+    // fill out a bill pay to payee and check's transaction occurred
     public static void PayBills() {
         WebElement billpay = driver.findElement(By.xpath("//a[@href='/parabank/billpay.htm']"));
         billpay.click();
@@ -40,7 +40,7 @@ public class PayBillingMethod {
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div[5]/button")).click();
         WebElement billPayed = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/table/tbody/tr[1]/td[2]/a"));
         billPayed.getText();
-        Assert.assertTrue("\tBill Payment to Mickey",true);
+        Assert.assertTrue("Bill Payment to Mickey",true);
 
     }
 }

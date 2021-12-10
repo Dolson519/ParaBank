@@ -46,7 +46,7 @@ public static void loanApply(){
         WebElement requestloan = driver.findElement(By.xpath("//a[@href='/parabank/requestloan.htm']"));
         requestloan.click();
         WebElement request_amount= driver.findElement(By.xpath("//input[@id='amount']"));
-        request_amount.sendKeys("");
+        request_amount.sendKeys(" ");
         WebElement downpayment= driver.findElement(By.xpath("//input[@id='downPayment']"));
         downpayment.sendKeys("900");
         WebElement apply_now = driver.findElement(By.xpath("//input[@class='button']"));

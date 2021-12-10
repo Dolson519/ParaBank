@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 public class FalseLoginMethod {
     private static WebDriver driver = Util.getDriver();
 
-
+    // attempts to login with incorrect credentials.
     public static void falseLogin() {
 
         WebElement username = driver.findElement(By.cssSelector("#loginPanel > form > div:nth-child(2) > input"));
