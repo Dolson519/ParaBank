@@ -12,6 +12,8 @@ public class RegisterMethod {
 
 // registers new users account information
     public static void register() {
+     WebElement logOut = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/ul/li[8]/a"));
+     logOut.click();
 
        WebDriverWait wait = new WebDriverWait(driver,10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div[3]/div[1]/div/p[2]/a"))).click();
@@ -19,8 +21,8 @@ public class RegisterMethod {
         firstname.sendKeys("Thomas");
         WebElement lastname= driver.findElement(By.xpath("//*[contains(@id,'customer.lastName')]"));
         lastname.sendKeys("Braddison");
-        WebElement adress = driver.findElement(By.xpath("//*[@id=\"customer.address.street\"]"));
-        adress.sendKeys("123 ft ln");
+        WebElement address = driver.findElement(By.xpath("//*[@id=\"customer.address.street\"]"));
+        address.sendKeys("123 ft ln");
         WebElement City = driver.findElement(By.xpath("//*[@id=\"customer.address.city\"]"));
         City.sendKeys("hut");
         WebElement State = driver.findElement(By.xpath("//*[@id=\"customer.address.state\"]"));

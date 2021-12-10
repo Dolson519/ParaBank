@@ -1,12 +1,14 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class ForgotLoginMethod {
     private static WebDriver driver= Util.getDriver();
 
     //attempting to obtain forgotten login.
     public static void forgotLogin(){
-        driver.get("https://parabank.parasoft.com/parabank/index.htm");
+        WebElement logOut = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/ul/li[8]/a"));
+        logOut.click();
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/div/p[1]/a")).click();
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/form/table/tbody/tr[1]/td[2]/input")).sendKeys("Thomas");
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/form/table/tbody/tr[2]/td[2]/input")).sendKeys("Braddison");

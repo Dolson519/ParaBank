@@ -1,51 +1,67 @@
-import org.junit.After;
-import org.junit.Before;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
 
 
 public class WebSiteTest {
     private WebDriver driver = Util.getDriver();
 
-    @Before
-    public void deleteCookies() {
-        driver.manage().deleteAllCookies();
-    }
-
-    @Before
-    public void maxWindow() {
-        driver.manage().window().maximize();
-    }
-
-    @After
-    public void TearDown(){
-        driver.quit();
-    }
-
-    @Test
-    public void WebSiteRegister() {
-        RegisterMethod.register();
-        driver.get("https://parabank.parasoft.com/parabank/index.htm");
-        driver.quit();
-    }
-
-    @Test
-    public void EmptyFieldWebsiteRegister(){
-        EmptyFieldRegisterMethod.emptyFieldRegister();
-        driver.quit();
-    }
 
 
     @Test
-    public void Login() {
-        LoginMethod.login();
-        driver.quit();
+    public void accountBalance() {
+        CheckAccountBalanceMethod.balance();
     }
 
     @Test
-    public void falseLogin(){
-        FalseLoginMethod.falseLogin();
-        driver.quit();
+    public void openChecking(){
+        OpenAccount.CreateAccountChecking();
+    }
+
+    @Test
+    public void openSavings(){
+        OpenAccount.CreateAccountSavings();
+    }
+
+    @Test
+    public void updateInfo() {
+        UpdateInformationsMethod.UpdateProfile();
+    }
+
+    @Test
+    public void loan() {
+        RequestLoanMethod.loanApply();
+    }
+
+    @Test
+    public void lowFundsLoan(){
+        RequestLoanMethod.lowFundsLoanApply();
+    }
+
+    @Test
+    public void emptyFieldLoanApplyTest(){
+        RequestLoanMethod.emptyFieldLoanApply();
+    }
+
+
+    @Test(priority = 1)
+    public void searchForTransactionByAmount() {
+        TransactionsearchMethod.TransactionSearchByAmount();
+    }
+
+
+    @Test
+    public void searchForTransactionByDate() {
+        TransactionsearchMethod.TransactionSearchByDate();
+    }
+
+    @Test
+    public void SearchForTransactionByDateRange(){
+        TransactionsearchMethod.TransactionSearchByDateRange();
+    }
+
+    @Test
+    public void PayingBills() {
+        PayBillingMethod.PayBills();
     }
 
     // test doesn't work because of bug not being able to get customer info even with correct data 2021/12/06
@@ -53,92 +69,28 @@ public class WebSiteTest {
     public void forgotLoginTest() {
         ForgotLoginMethod.forgotLogin();
         driver.quit();
-
     }*/
 
+    /* keep getting internal error
     @Test
-    public void AccountBalance() {
-        LoginMethod.login();
-        CheckAccountBalanceMethod.balance();
-        driver.quit();
-    }
-
-    @Test
-    public void OpenChecking(){
-        LoginMethod.login();
-        OpenAccount.CreateAccountChecking();
-        driver.quit();
-    }
-
-    @Test
-    public void OpenSavings(){
-        LoginMethod.login();
-        OpenAccount.CreateAccountSavings();
-        driver.quit();
-    }
-
-    @Test
-    public void UpdateInfo() {
-        LoginMethod.login();
-        UpdateInformationsMethod.UpdateProfile();
-        driver.quit();
-    }
-
-    @Test
-    public void Loan() {
-        LoginMethod.login();
-        RequestLoanMethod.loanApply();
-        driver.quit();
-    }
-
-    @Test
-    public void LowFundsLoan(){
-        LoginMethod.login();
-        RequestLoanMethod.lowFundsLoanApply();
-        driver.quit();
-    }
-
-    @Test
-    public void EmptyFieldLoanApplyTest(){
-        LoginMethod.login();
-        RequestLoanMethod.emptyFieldLoanApply();
-        driver.quit();
-    }
-
-
-    @Test
-    public void SearchForTransactionByAmount() {
-        LoginMethod.login();
-        TransactionsearchMethod.TransactionSearchByAmount();
-        driver.quit();
-    }
-
-
-    @Test
-    public void SearchForTransactionByDate() {
-        LoginMethod.login();
-        TransactionsearchMethod.TransactionSearchByDate();
-        driver.quit();
-    }
-
-    @Test
-    public void SearchForTransactionByDateRange(){
-        LoginMethod.login();
-        TransactionsearchMethod.TransactionSearchByDateRange();
-        driver.quit();
-    }
-
-    @Test
-    public void PayingBills() {
-        LoginMethod.login();
-        PayBillingMethod.PayBills();
-        driver.quit();
-    }
-
-    /*@Test keep getting internal error
     public void TransferFunds(){
-        LoginMethod.login();
         TransferFundsMethods.transfer_money();
         driver.quit();
     }*/
+    @Test
+    public void WebSiteRegister(){
+        RegisterMethod.register();
+        //driver.quit();
+    }
+
+    @Test
+    public void EmptyFieldWebsiteRegister(){
+        EmptyFieldRegisterMethod.emptyFieldRegister();
+    }
+
+    @Test
+    public void falseLogin(){
+        FalseLoginMethod.falseLogin();
+    }
+
 }

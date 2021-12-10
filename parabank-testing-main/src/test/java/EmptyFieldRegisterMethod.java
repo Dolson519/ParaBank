@@ -12,10 +12,13 @@ public class EmptyFieldRegisterMethod {
     //Attempting to register account with incomplete data.
     public static void emptyFieldRegister() {
 
+        WebElement logOut = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/ul/li[8]/a"));
+        logOut.click();
+
         WebDriverWait wait = new WebDriverWait(driver,10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[1]/div[3]/div[1]/div/p[2]/a"))).click();
         WebElement firstname= driver.findElement(By.xpath("//*[contains(@id,'customer.firstName')]"));
-        firstname.sendKeys("Donald");
+        firstname.sendKeys("Thomas");
         WebElement lastname= driver.findElement(By.xpath("//*[contains(@id,'customer.lastName')]"));
         lastname.sendKeys("");
         WebElement adress = driver.findElement(By.xpath("//*[@id=\"customer.address.street\"]"));
