@@ -66,7 +66,6 @@ public class WebSiteTest extends Base{
     /*@Test
     public void forgotLoginTest() {
         ForgotLoginMethod.forgotLogin();
-
     }*/
 
 
@@ -74,6 +73,7 @@ public class WebSiteTest extends Base{
     public void TransferFunds(){
         TransferFundsMethods.transfer_money();
     }
+
     @Test
     public void WebSiteRegister(){
         RegisterMethod.register();

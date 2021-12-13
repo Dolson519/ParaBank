@@ -29,6 +29,7 @@ public class Base {
             submit_button.click();
         return driver;
     }
+
     @AfterMethod
     public void tearDown(){
         driver.close();
