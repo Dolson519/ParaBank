@@ -69,10 +69,10 @@ public class WebSiteTest extends Base{
     }*/
 
 
-    @Test
-    public void TransferFunds(){
-        TransferFundsMethods.transfer_money();
-    }
+    //@Test
+    //public void TransferFunds(){
+        //TransferFundsMethods.transfer_money();
+    //}
 
     @Test
     public void WebSiteRegister(){
