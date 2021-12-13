@@ -1,3 +1,4 @@
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -12,6 +13,6 @@ public class TransferFundsMethods extends Base{
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div[1]/select[2]")).click();
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div[1]/select[1]/option[3]")).click();
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div[2]/input")).click();
-
+        Assert.assertTrue("/html/body/div[1]/div[3]/div[2]/div/div/h1", true);
     }
 }

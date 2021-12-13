@@ -69,11 +69,11 @@ public class WebSiteTest extends Base{
 
     }*/
 
-    /* keep getting internal error
+
     @Test
     public void TransferFunds(){
         TransferFundsMethods.transfer_money();
-    }*/
+    }
     @Test
     public void WebSiteRegister(){
         RegisterMethod.register();
