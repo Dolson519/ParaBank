@@ -5,9 +5,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class RegisterMethod {
-    private static WebDriver driver= Base.getDriver();
-
+public class RegisterMethod extends Base{
 
 
 // registers new users account information

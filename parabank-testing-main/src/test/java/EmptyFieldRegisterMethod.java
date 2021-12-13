@@ -6,8 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class EmptyFieldRegisterMethod {
-    private static WebDriver driver= Base.getDriver();
+public class EmptyFieldRegisterMethod extends Base{
 
     //Attempting to register account with incomplete data.
     public static void emptyFieldRegister() {

@@ -1,17 +1,14 @@
-import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 
 import java.util.concurrent.TimeUnit;
 
 public class Base {
-    private static WebDriver driver;
+    public static WebDriver driver;
 
     //class is used for the chrome driver, and getting to the para bank site
     @BeforeMethod

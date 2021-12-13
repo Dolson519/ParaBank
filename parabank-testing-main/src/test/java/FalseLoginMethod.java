@@ -3,8 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class FalseLoginMethod {
-    private static WebDriver driver = Base.getDriver();
+public class FalseLoginMethod extends Base{
 
     // attempts to login with incorrect credentials.
     public static void falseLogin() {

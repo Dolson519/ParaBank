@@ -1,9 +1,8 @@
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 
-public class WebSiteTest {
-    private WebDriver driver = Base.getDriver();
+public class WebSiteTest extends Base{
+
 
 
     @Test

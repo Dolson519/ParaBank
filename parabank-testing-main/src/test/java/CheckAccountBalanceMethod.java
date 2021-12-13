@@ -3,8 +3,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 
-public class CheckAccountBalanceMethod {
-    private static WebDriver driver = Base.getDriver();
+public class CheckAccountBalanceMethod extends Base{
 
 //clicks on the account overview to see balance.
     public static void balance() {

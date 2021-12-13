@@ -4,11 +4,11 @@ import org.openqa.selenium.WebDriver;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class OpenAccount {
-    private static WebDriver driver = Base.getDriver();
+public class OpenAccount extends Base{
+
 
     //create a checking account
-    public static void CreateAccountChecking() {
+    public static void CreateAccountChecking(){
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/ul/li[1]/a")).click();
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/select[1]"));
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div/input")).click();

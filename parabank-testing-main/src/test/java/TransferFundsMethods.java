@@ -1,8 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class TransferFundsMethods {
-    private static WebDriver driver = Base.getDriver();
+public class TransferFundsMethods extends Base{
 
 //transfer money from one account to another owned account.
     public static void transfer_money() {

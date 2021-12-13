@@ -3,8 +3,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class UpdateInformationsMethod {
-    private static WebDriver driver = Base.getDriver();
+public class UpdateInformationsMethod extends Base{
+
 
 
 //update users new contact information

@@ -2,8 +2,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class ForgotLoginMethod {
-    private static WebDriver driver= Base.getDriver();
+public class ForgotLoginMethod extends Base{
+
 
     //attempting to obtain forgotten login.
     public static void forgotLogin(){
