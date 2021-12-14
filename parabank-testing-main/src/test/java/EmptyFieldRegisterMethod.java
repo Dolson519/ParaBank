@@ -1,9 +1,9 @@
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 
 public class EmptyFieldRegisterMethod extends Base{
@@ -41,6 +41,6 @@ public class EmptyFieldRegisterMethod extends Base{
         WebElement register_button = driver.findElement(By.xpath("//input[@class='button' and @value='Register']"));
         register_button.click();
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/form/table/tbody/tr[2]/td[3]/span")).getText();
-        Assert.assertTrue("Last name is required.", true);
+        Assert.assertTrue(true,"Last name is required.");
     }
 }

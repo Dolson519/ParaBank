@@ -1,6 +1,7 @@
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -13,7 +14,7 @@ public class OpenAccount extends Base{
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/select[1]"));
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div/input")).click();
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/h1")).getText();
-        Assert.assertTrue("Account Opened!", true);
+        Assert.assertTrue(true,"Account Opened!");
     }
 
     //create a savings account
@@ -22,7 +23,7 @@ public class OpenAccount extends Base{
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/select[1]/option[2]")).click();
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div/input")).click();
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/h1")).getText();
-        Assert.assertTrue("Account Opened!", true);
+        Assert.assertTrue(true,"Account Opened!");
     }
 
 }

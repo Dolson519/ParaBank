@@ -1,10 +1,9 @@
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 public class RequestLoanMethod extends Base{
-
 
 
 public static void loanApply(){
@@ -21,7 +20,7 @@ public static void loanApply(){
    WebElement select_account = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/table/tbody/tr[1]/td[1]/a"));
    select_account.click();
    driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div[2]/table/tbody/tr[1]/td[2]/a")).getText();
-    Assert.assertTrue("Down Payment for Loan", true);
+    Assert.assertTrue(true,"Down Payment for Loan");
     }
 
     public static void lowFundsLoanApply(){
@@ -34,7 +33,7 @@ public static void loanApply(){
         WebElement apply_now = driver.findElement(By.xpath("//input[@class='button']"));
         apply_now.click();
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/div/p")).getText();
-        Assert.assertTrue("You do not have sufficient funds for the given down payment.", true);
+        Assert.assertTrue(true,"You do not have sufficient funds for the given down payment.");
     }
 
     public static void emptyFieldLoanApply(){
@@ -47,8 +46,6 @@ public static void loanApply(){
         WebElement apply_now = driver.findElement(By.xpath("//input[@class='button']"));
         apply_now.click();
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/h1")).getText();
-        Assert.assertTrue("Error!",true);
+        Assert.assertTrue(true,"Error!");
     }
-
-
 }

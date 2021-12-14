@@ -1,7 +1,6 @@
-import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 public class PayBillingMethod extends Base{
 
@@ -26,18 +25,13 @@ public class PayBillingMethod extends Base{
         WebElement verify_accountno = driver.findElement(By.xpath("//*[contains(@name,'verifyAccount')]"));
         verify_accountno.sendKeys("54321");
         WebElement amount = driver.findElement(By.xpath("//*[contains(@name,'amount')]"));
-        amount.sendKeys("10");
+        amount.sendKeys("20");
         WebElement send_payment = driver.findElement(By.xpath("//*[@type='submit'or @type='submit']"));
         send_payment.click();
-        driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[1]/ul/li[5]/a")).click();
-        driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div[1]/select")).click();
-        //change xpath to correct account
-        driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div[1]/select/option[2]")).click();
-        driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div[4]/input")).sendKeys("12-13-2021");
-        driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div[5]/button")).click();
+        TransactionsearchMethod.TransactionSearchByAmount();
         WebElement billPayed = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/table/tbody/tr[1]/td[2]/a"));
         billPayed.getText();
-        Assert.assertTrue("Bill Payment to Mickey",true);
+        Assert.assertTrue(true, "Bill Payment to Mickey");
 
     }
 }

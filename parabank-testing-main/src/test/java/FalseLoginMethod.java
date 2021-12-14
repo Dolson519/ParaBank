@@ -1,6 +1,6 @@
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 public class FalseLoginMethod extends Base{
 
@@ -17,6 +17,6 @@ public class FalseLoginMethod extends Base{
         WebElement submit_button = driver.findElement(By.cssSelector("input.button"));
         submit_button.click();
         driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/p")).getText();
-        Assert.assertTrue("The username and password could not be verified.", true);
+        Assert.assertTrue(true, "The username and password could not be verified.");
     }
 }

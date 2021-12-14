@@ -1,7 +1,7 @@
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 public class UpdateInformationsMethod extends Base{
 
@@ -35,7 +35,7 @@ public static void UpdateProfile(){
     WebElement update_profile = driver.findElement(By.xpath("//*[@type='submit']"));
     update_profile.click();
     driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/h1")).getText();
-    Assert.assertTrue("Profile Updated",true);
+    Assert.assertTrue(true, "Profile Updated");
 
 }
 
