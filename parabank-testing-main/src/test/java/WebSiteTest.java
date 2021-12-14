@@ -43,18 +43,18 @@ public class WebSiteTest extends Base{
 
     @Test(priority = 14)
     public void searchForTransactionByAmount() {
-        TransactionsearchMethod.TransactionSearchByAmount();
+        TransactionSearchMethod.TransactionSearchByAmount();
     }
 
 
     @Test
     public void searchForTransactionByDate() {
-        TransactionsearchMethod.TransactionSearchByDate();
+        TransactionSearchMethod.TransactionSearchByDate();
     }
 
     @Test
     public void SearchForTransactionByDateRange(){
-        TransactionsearchMethod.TransactionSearchByDateRange();
+        TransactionSearchMethod.TransactionSearchByDateRange();
     }
 
     @Test

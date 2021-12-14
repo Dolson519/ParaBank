@@ -28,7 +28,7 @@ public class PayBillingMethod extends Base{
         amount.sendKeys("20");
         WebElement send_payment = driver.findElement(By.xpath("//*[@type='submit'or @type='submit']"));
         send_payment.click();
-        TransactionsearchMethod.TransactionSearchByAmount();
+        TransactionSearchMethod.TransactionSearchByAmount();
         WebElement billPayed = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/table/tbody/tr[1]/td[2]/a"));
         billPayed.getText();
         Assert.assertTrue(true, "Bill Payment to Mickey");

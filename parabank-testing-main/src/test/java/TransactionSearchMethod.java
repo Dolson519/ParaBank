@@ -6,7 +6,8 @@ import org.testng.Assert;
 
 import java.util.concurrent.TimeUnit;
 
-public class TransactionsearchMethod extends Base{
+public class TransactionSearchMethod extends Base{
+
 
 
         public static void TransactionSearchByAmount(){
