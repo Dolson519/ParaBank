@@ -16,7 +16,7 @@ public class TransactionSearchMethod extends Base{
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
             //Need to change the Xpath to correct account every time it resets
-            WebElement mainAcc = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div[1]/select/option[2]"));
+            WebElement mainAcc = driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div[1]/select/option[1]"));
             mainAcc.click();
             driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div[8]/input")).sendKeys("20");
             driver.findElement(By.xpath("/html/body/div[1]/div[3]/div[2]/div/div/form/div[9]/button")).click();
