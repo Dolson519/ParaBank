@@ -10,25 +10,25 @@ public class WebSiteTest extends Base{
         CheckAccountBalanceMethod.balance();
     }
 
-    @Test
-    public void openChecking(){
-        OpenAccount.CreateAccountChecking();
-    }
+    //@Test
+    //public void openChecking(){
+        //OpenAccount.CreateAccountChecking();
+    //}
 
-    @Test
-    public void openSavings(){
-        OpenAccount.CreateAccountSavings();
-    }
+    //@Test
+    //public void openSavings(){
+        //OpenAccount.CreateAccountSavings();
+   // }
 
     @Test
     public void updateInfo() {
         UpdateInformationsMethod.UpdateProfile();
     }
 
-    @Test
-    public void loan() {
-        RequestLoanMethod.loanApply();
-    }
+    //@Test
+    //public void loan() {
+        //RequestLoanMethod.loanApply();
+    //}
 
     @Test
     public void lowFundsLoan(){
